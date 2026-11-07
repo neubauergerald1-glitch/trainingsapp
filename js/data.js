@@ -5,7 +5,7 @@ window.APP_DATA = {
       { n: "Seated Leg Press", d: "3 × 10–12", p: "2 min", t: "Life Fitness", g: ["mtb"], tip: "Füße schulterbreit auf der Platte, Knie oben nicht ganz durchstrecken. Rücken bleibt am Polster." },
       { n: "Chest Press", d: "3 × 8–12", p: "90 s", t: "Life Fitness", g: [], tip: "Sitz so einstellen, dass die Griffe auf Brusthöhe sind. Schulterblätter nach hinten-unten." },
       { n: "Pulldown", d: "3 × 10–12", p: "90 s", t: "Life Fitness", g: ["mtb", "biz"], tip: "Griffe zur oberen Brust ziehen, Brust raus, Oberkörper ruhig. Trainiert Rücken und Bizeps mit." },
-      { n: "Row", d: "3 × 10–12", p: "90 s", t: "Life Fitness", g: ["mtb", "biz"], tip: "Brust ans Polster, Griffe zum Bauch ziehen, Ellbogen nah am Körper und die Schulterblätter am Ende zusammendrücken. Gleicht die Chest Press aus und hält den Oberkörper im Downhill stabil." },
+      { n: "Back Extension", d: "3 × 12–15", p: "90 s", t: "Life Fitness", g: ["mtb", "abs"], tip: "Hüfte am Drehpunkt ausrichten, Füße fest, Arme vor der Brust verschränkt. Langsam und kontrolliert nach hinten strecken, bis der Körper gerade ist, nicht ins Hohlkreuz überstrecken. Kräftigt den unteren Rücken, der bei langen Anstiegen und im Stehen bergab am meisten arbeitet." },
       { n: "Biceps Curl", d: "3 × 10–12", p: "60 s", t: "Life Fitness", g: ["biz"], tip: "Ellbogen auf Höhe der Drehachse. Oben kurz anspannen, 2–3 Sekunden ablassen." },
       { n: "Abdominal", d: "3 × 12–15", p: "60 s", t: "Life Fitness", g: ["abs"], tip: "Mit dem Bauch einrollen, nicht mit den Armen ziehen. Beim Einrollen ausatmen." },
       { n: "Torso Rotation", d: "2 × 12 / Seite", p: "60 s", t: "Life Fitness", g: ["abs", "mtb"], tip: "Kontrolliert drehen, ein kleiner Bewegungsradius reicht. Wichtig für Stabilität im Trail." }
@@ -17,6 +17,7 @@ window.APP_DATA = {
       { n: "Pulldown", d: "3 × 10–12", p: "90 s", t: "Life Fitness", g: ["mtb", "biz"], tip: "Wie in Plan A. Wenn möglich mit Griff im Untergriff, das fordert den Bizeps stärker." },
       { n: "Biceps Curl", d: "3 × 12–15", p: "60 s", t: "Life Fitness", g: ["biz"], tip: "Etwas leichter, dafür mehr Wiederholungen. Im letzten Satz unten 2 Sekunden halten." },
       { n: "Calf Extension", d: "3 × 12–15", p: "60 s", t: "Life Fitness", g: ["mtb"], tip: "Volle Bewegung: tief in die Dehnung, oben kurz halten. Stabilisiert die Füße auf den Pedalen." },
+      { n: "Hip Abduction", d: "3 × 12–15", p: "60 s", t: "Life Fitness", g: ["mtb"], tip: "Rücken ans Polster, Polster außen an den Knien. Beine kontrolliert nach außen drücken, kurz halten, 2–3 Sekunden zurück. Kräftigt den seitlichen Po, der Knie und Becken auf dem Rad stabil hält." },
       { n: "Plank", d: "3 × 30–45 s", p: "45 s", t: "Körpergewicht", g: ["abs", "mtb"], tip: "Auf den Unterarmen, Körper gerade wie ein Brett, Bauch und Po fest. Normal weiteratmen." }
     ]
   },

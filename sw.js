@@ -1,5 +1,5 @@
 /* Offline-Cache. Bei Änderungen an der App VERSION erhöhen. */
-const VERSION = "training-v1";
+const VERSION = "training-v2";
 const FILES = ["./", "index.html", "css/style.css", "js/data.js", "js/store.js", "js/app.js",
   "manifest.webmanifest", "icons/icon.svg", "icons/icon-192.png", "icons/apple-touch-icon.png"];
 
