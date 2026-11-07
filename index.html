@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Trainingsplan Gerald</title>
+<meta name="theme-color" content="#e2741b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Training">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">3× pro Woche · Ganzkörper an Geräten</div>
+    <h1>Trainingsplan Gerald</h1>
+    <div class="goals">
+      <span class="chip abs">Bauch / Sixpack</span>
+      <span class="chip biz">Bizeps</span>
+      <span class="chip mtb">MTB-Kraft</span>
+    </div>
+  </header>
+
+  <section class="today" id="today" aria-live="polite"></section>
+
+  <section class="section" aria-label="Wochenrhythmus">
+    <h2>Wochenrhythmus</h2>
+    <div class="week">
+      <div class="wk" data-parity="1"><div class="lbl">Woche 1, 3, 5 …</div>
+        <div class="days"><div class="day a"><small>Mo</small><b>A</b></div><div class="day b"><small>Mi</small><b>B</b></div><div class="day a"><small>Fr</small><b>A</b></div></div></div>
+      <div class="wk" data-parity="0"><div class="lbl">Woche 2, 4, 6 …</div>
+        <div class="days"><div class="day b"><small>Mo</small><b>B</b></div><div class="day a"><small>Mi</small><b>A</b></div><div class="day b"><small>Fr</small><b>B</b></div></div></div>
+    </div>
+    <p class="note">Mindestens ein Ruhetag zwischen den Einheiten. Kein schweres Beintraining am Tag vor einer großen Tour. Aufwärmen: 5–10 min Rad oder Crosstrainer, dann bei jedem Gerät ein leichter Satz mit halbem Gewicht.</p>
+  </section>
+
+  <div class="switch" role="tablist" aria-label="Bereich wählen">
+    <button role="tab" aria-selected="true" data-view="A">Plan A</button>
+    <button role="tab" aria-selected="false" data-view="B">Plan B</button>
+    <button role="tab" aria-selected="false" data-view="N">Ernährung</button>
+  </div>
+
+  <div class="panel" id="training">
+    <section class="section">
+      <div class="list" id="list"></div>
+      <button class="btn" id="reset" type="button">Neue Einheit: Haken zurücksetzen</button>
+      <p class="note">Trag bei jedem Gerät dein heutiges Gewicht ein. Es wird mit Datum gespeichert; daraus entstehen „Letztes Training“, „Rekord“ und die Verlaufskurve. Gleiche Geräte in Plan A und B teilen sich diese Werte.</p>
+    </section>
+
+    <section class="section">
+      <h2>Phasen</h2>
+      <div class="phases">
+        <div class="ph" data-phase="1"><b>Woche 1–2</b><span>2 Sätze. Woche 1 ist Testwoche: Gewichte herantasten und eintragen.</span></div>
+        <div class="ph" data-phase="2"><b>Woche 3–7</b><span>3 Sätze. Gewichte nach der Regel steigern.</span></div>
+        <div class="ph" data-phase="3"><b>Woche 8</b><span>Leichte Woche: 2 Sätze, ca. 20 % weniger Gewicht. Danach wieder Woche 3.</span></div>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>Gewicht wählen &amp; steigern</h2>
+      <ul>
+        <li>Wähle das Gewicht so, dass nach dem letzten Satz noch <strong>1–2 saubere Wiederholungen</strong> möglich wären.</li>
+        <li>Schaffst du in allen Sätzen das obere Ende (z. B. 3×12), legst du nächstes Mal <span class="plate">+2,5</span> kg drauf. An der Beinpresse +5 kg.</li>
+        <li>Langsam ablassen (2–3 Sekunden), ausatmen beim Drücken oder Ziehen. Technik geht vor Gewicht.</li>
+        <li>Pausen: 60–90 s, an der Beinpresse bis 2 min.</li>
+        <li>Gelenke ziehen oder stechen? Gewicht reduzieren oder Bewegungsweg verkürzen. Normaler Muskelkater ist in Ordnung.</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="panel" id="nutrition" hidden>
+    <section class="box hl">
+      <h2>Sixpack entsteht in der Küche</h2>
+      <p class="note strong">Bauchfett lässt sich nicht gezielt wegtrainieren. Es schmilzt, wenn du etwas weniger isst, als du verbrauchst. Gleichzeitig braucht der Muskel genug Eiweiß, damit Bizeps und Beine trotzdem wachsen.</p>
+    </section>
+
+    <section class="section">
+      <h2>Tagesziele</h2>
+      <div class="stats">
+        <div class="stat"><b>−300–500</b><span>kcal pro Tag unter Bedarf</span></div>
+        <div class="stat"><b>1,6–2 g</b><span>Eiweiß pro kg Körpergewicht</span></div>
+        <div class="stat"><b>30–40 g</b><span>Eiweiß pro Mahlzeit, 3–4×</span></div>
+      </div>
+      <div class="box">
+        <ul>
+          <li><strong>Teller-Regel:</strong> halb Gemüse oder Salat, ein Viertel Eiweiß (Fleisch, Fisch, Eier, Topfen, Hülsenfrüchte), ein Viertel Vollkorn, Kartoffeln oder Reis.</li>
+          <li><strong>Kohlenhydrate</strong> eher rund ums Training und vor MTB-Touren, am Abend etwas weniger.</li>
+          <li><strong>Trinken:</strong> 2–3 Liter Wasser oder ungesüßter Tee. Säfte und Limonaden meiden.</li>
+          <li><strong>Alkohol</strong> ist der größte Sixpack-Bremser: Bier und Wein auf wenige Gläser pro Woche begrenzen.</li>
+          <li><strong>Nach dem Training</strong> innerhalb von 1–2 Stunden eine eiweißreiche Mahlzeit.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><h2>Rezeptideen der Woche</h2><span class="stand" id="wk-stand"></span></div>
+      <p class="note">Jeden Montag gibt es neue Vorschläge. Was dir schmeckt, legst du in deine Rezeptebox.</p>
+      <div class="recipes" id="recipes"></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><h2>Meine Rezeptebox</h2><span class="stand" id="box-count"></span></div>
+      <div class="recipes" id="box"></div>
+    </section>
+
+    <section class="section">
+      <h2>Nahrungsergänzung</h2>
+      <div class="supp">
+        <div class="sp"><b>Kreatin-Monohydrat <span class="rating r-yes">empfohlen</span></b><span class="dosis">3–5 g täglich</span>
+          <p>Das am besten untersuchte Supplement für Kraft und Muskelaufbau, gerade ab 50 sinnvoll. Jeden Tag, auch an trainingsfreien Tagen, Zeitpunkt egal. Am Anfang kann das Gewicht durch Wasser in den Muskeln um 1–2 kg steigen.</p></div>
+        <div class="sp"><b>Whey- oder Mehrkomponenten-Protein <span class="rating r-yes">praktisch</span></b><span class="dosis">bei Bedarf 25–30 g</span>
+          <p>Kein Muss, aber hilfreich, wenn du die Eiweißmenge mit normalem Essen nicht schaffst. Laktosefrei oder vegan erhältlich.</p></div>
+        <div class="sp"><b>Vitamin D3 <span class="rating r-yes">Okt. bis März</span></b><span class="dosis">1.000–2.000 IE täglich</span>
+          <p>In Österreich haben im Winter viele zu wenig. Am besten beim Hausarzt den Spiegel messen lassen und danach dosieren.</p></div>
+        <div class="sp"><b>Omega-3 (Fischöl) <span class="rating r-opt">optional</span></b><span class="dosis">ca. 1 g EPA/DHA</span>
+          <p>Nur nötig, wenn du weniger als zweimal pro Woche fetten Fisch isst.</p></div>
+        <div class="sp"><b>Magnesium <span class="rating r-opt">optional</span></b><span class="dosis">200–300 mg abends</span>
+          <p>Kann bei Krämpfen nach langen Touren helfen.</p></div>
+        <div class="sp"><b>Fatburner, Testo-Booster, L-Carnitin <span class="rating r-no">nicht nötig</span></b><span class="dosis">–</span>
+          <p>Ohne nachgewiesenen Nutzen für den Fettabbau, oft teuer und manchmal riskant.</p></div>
+      </div>
+      <p class="note">Nimmst du regelmäßig Medikamente, sprich Nahrungsergänzungen kurz mit deinem Arzt ab.</p>
+    </section>
+  </div>
+
+  <details class="box settings">
+    <summary><h2>Einstellungen &amp; Datensicherung</h2></summary>
+    <label class="field">Erster Trainingstag (Montag von Woche 1)
+      <input type="date" id="start-date">
+    </label>
+    <p class="note">Daraus ergeben sich Trainingswoche, Phase und ob diese Woche mit A oder B beginnt.</p>
+    <div class="row">
+      <button class="btn" id="export" type="button">Daten exportieren</button>
+      <label class="btn" for="import-file">Daten importieren</label>
+      <input type="file" id="import-file" accept="application/json,.json" hidden>
+    </div>
+    <p class="note">Alle Daten liegen nur auf diesem Gerät. Exportiere ab und zu eine Sicherung, z. B. in iCloud Drive.</p>
+    <p class="note" id="settings-msg" hidden></p>
+  </details>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+</script>
+</body>
+</html>
